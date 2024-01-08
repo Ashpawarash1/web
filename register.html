@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>registration</title>
+</head>
+<body>
+    <div class="form">
+        <div class="reg-box">
+            <div class="wrapper rounded bg-white">
+
+                <div class="h3">Registration Form</div>
+        
+                <div class="form">
+                    <div class="row">
+                        <div class="col-md-6 mt-md-0 mt-3 ">
+                            <label> Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class=" col-md-6 mt-md-0 mt-3" class="form-control">
+                            <label>Branch You are Looking for</label>
+                            <select id="sub" required>
+                                <option value="" selected hidden>Choose Option</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Civil">Civil</option>
+                                <option value="Mechanical">Mechanical</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <label>Age</label>
+                            <input type="number" id="age" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <label>Phone Number</label>
+                            <input type="tel" id="phone"class="form-control" required>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <label>Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="btn btn-primary mt-3" id="submit-btn"onclick="submitData()">Submit</div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="registered">
+        <h2 class="text-light text-center">Record Of Student</h2>
+        <table class="text-center">
+            <thead> 
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                
+            </tr>
+            </thead>
+            <tbody id="record-list"></tbody>
+        </table>
+
+    </div>
+    <script src="register.js"></script>
+</body>
+   
+</html>
